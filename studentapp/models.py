@@ -5,7 +5,5 @@ class Students(models.Model):
     div=models.CharField(max_length=200)
     address=models.CharField(max_length=200)
     roll_number=models.CharField(max_length=50)
-
-
-def room():
-    return None
+    def __str__(self):
+        return self.name
